@@ -1,0 +1,57 @@
+<%= form_for(@event_schedule) do |f| %>
+  <% if @event_schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event_schedule.errors.count, "error") %> prohibited this event_schedule from being saved:</h2>
+
+      <ul>
+      <% @event_schedule.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :event %><br />
+    <%= f.text_field :event %>
+  </div>
+  <div class="field">
+    <%= f.label :event_date %><br />
+    <%= f.date_select :event_date %>
+  </div>
+  <div class="field">
+    <%= f.label :event_time %><br />
+    <%= f.text_field :event_time %>
+  </div>
+  <div class="field">
+    <%= f.label :monday %><br />
+    <%= f.text_field :monday %>
+  </div>
+  <div class="field">
+    <%= f.label :tuesday %><br />
+    <%= f.text_field :tuesday %>
+  </div>
+  <div class="field">
+    <%= f.label :wednsday %><br />
+    <%= f.text_field :wednsday %>
+  </div>
+  <div class="field">
+    <%= f.label :thursday %><br />
+    <%= f.text_field :thursday %>
+  </div>
+  <div class="field">
+    <%= f.label :friday %><br />
+    <%= f.text_field :friday %>
+  </div>
+  <div class="field">
+    <%= f.label :saturday %><br />
+    <%= f.text_field :saturday %>
+  </div>
+  <div class="field">
+    <%= f.label :sunday %><br />
+    <%= f.text_field :sunday %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

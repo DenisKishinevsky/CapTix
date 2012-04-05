@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Event:</b>
+  <%= @event_schedule.event %>
+</p>
+
+<p>
+  <b>Event date:</b>
+  <%= @event_schedule.event_date %>
+</p>
+
+<p>
+  <b>Event time:</b>
+  <%= @event_schedule.event_time %>
+</p>
+
+<p>
+  <b>Monday:</b>
+  <%= @event_schedule.monday %>
+</p>
+
+<p>
+  <b>Tuesday:</b>
+  <%= @event_schedule.tuesday %>
+</p>
+
+<p>
+  <b>Wednsday:</b>
+  <%= @event_schedule.wednsday %>
+</p>
+
+<p>
+  <b>Thursday:</b>
+  <%= @event_schedule.thursday %>
+</p>
+
+<p>
+  <b>Friday:</b>
+  <%= @event_schedule.friday %>
+</p>
+
+<p>
+  <b>Saturday:</b>
+  <%= @event_schedule.saturday %>
+</p>
+
+<p>
+  <b>Sunday:</b>
+  <%= @event_schedule.sunday %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_schedule_path(@event_schedule) %> |
+<%= link_to 'Back', event_schedules_path %>

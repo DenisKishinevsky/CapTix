@@ -1,0 +1,41 @@
+<h1>Listing event_schedules</h1>
+
+<table>
+  <tr>
+    <th>Event</th>
+    <th>Event date</th>
+    <th>Event time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednsday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @event_schedules.each do |event_schedule| %>
+  <tr>
+    <td><%= event_schedule.event %></td>
+    <td><%= event_schedule.event_date %></td>
+    <td><%= event_schedule.event_time %></td>
+    <td><%= event_schedule.monday %></td>
+    <td><%= event_schedule.tuesday %></td>
+    <td><%= event_schedule.wednsday %></td>
+    <td><%= event_schedule.thursday %></td>
+    <td><%= event_schedule.friday %></td>
+    <td><%= event_schedule.saturday %></td>
+    <td><%= event_schedule.sunday %></td>
+    <td><%= link_to 'Show', event_schedule %></td>
+    <td><%= link_to 'Edit', edit_event_schedule_path(event_schedule) %></td>
+    <td><%= link_to 'Destroy', event_schedule, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event schedule', new_event_schedule_path %>
