@@ -1,3 +1,46 @@
-// Place all the styles related to the event_schedules controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#table5 {
+	background-color: #f5f5f5;
+	padding: 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ebebeb;
+	width:1100px !important;
+	margin:0 auto;
+	
+}
+#table5 th {
+	padding: 1px 5px;
+}
+
+#table5 th {
+	text-align: left;
+		font: normal 15px Helvetica Neue,Helvetica,sans-serif;
+ -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(-90deg, #EFEFEF, #DFE1E2) repeat scroll 0 0 transparent;
+    border-color: #E6E6E6 -moz-use-text-color #CDCDCD #D4D4D4;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
+    color: #5E6469;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 0.5em;
+    padding: 5px 12px 3px;
+    text-align: left;
+    text-shadow: 0 1px 0 white;
+}
+#table5 td {
+	font-size: 12px;
+	border-bottom: 1px solid #E8E8E8;
+    padding: 10px 12px 8px;
+    vertical-align: top;
+}
+#table5 td:hover {
+	background-color: #fff;
+}

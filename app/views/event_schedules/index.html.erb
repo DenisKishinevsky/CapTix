@@ -1,6 +1,7 @@
-<h1>Listing event_schedules</h1>
+<h1></h1>
 
-<table>
+<table id="table5" align="center">
+
   <tr>
     <th>Event</th>
     <th>Event date</th>
@@ -12,9 +13,6 @@
     <th>Friday</th>
     <th>Saturday</th>
     <th>Sunday</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @event_schedules.each do |event_schedule| %>
@@ -29,13 +27,11 @@
     <td><%= event_schedule.friday %></td>
     <td><%= event_schedule.saturday %></td>
     <td><%= event_schedule.sunday %></td>
-    <td><%= link_to 'Show', event_schedule %></td>
-    <td><%= link_to 'Edit', edit_event_schedule_path(event_schedule) %></td>
-    <td><%= link_to 'Destroy', event_schedule, confirm: 'Are you sure?', method: :delete %></td>
+
   </tr>
 <% end %>
+
 </table>
 
 <br />
 
-<%= link_to 'New Event schedule', new_event_schedule_path %>
